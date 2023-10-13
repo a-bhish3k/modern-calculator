@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="d-flex flex-column justify-content-center align-items-center">
+      <h1 class="mb-4 text-primary">Calculator</h1>
+      <div class="cal-container p-3 d-flex flex-column">
+        <div class="innerCon1 d-flex flex-column justify-content-end pb-2">
+          <p
+            type="text"
+            class="w-100 text-end pe-3 mb-2"
+            style="font-size: 18px; color: #cfcfcf"
+            id="output1"
+            disabled
+          ></p>
+          <input
+            type="text"
+            class="w-100 border-0 pb-2 text-end pe-3"
+            style="font-size: 42px"
+            id="output2"
+            disabled
+            placeholder="0"
+          />
+        </div>
+        <div class="innerCon2">
+          <div class="box-1 row m-0 g-0">
+            <div class="col-3 btn-box">
+              <button onclick="allClear()" class="btn-inner">AC</button>
+            </div>
+            <div class="col-3 btn-box">
+              <button onclick="clearEntry()" class="btn-inner">CE</button>
+            </div>
+            <div class="col-3 btn-box">
+              <button
+                value="/"
+                onclick="inputKey2('/')"
+                class="btn-inner inputOp"
+              >
+                &divide;
+              </button>
+            </div>
+            <div class="col-3 btn-box">
+              <button
+                value="*"
+                onclick="inputKey2('*')"
+                class="btn-inner inputOp"
+              >
+                &times;
+              </button>
+            </div>
+            <div class="col-3 btn-box">
+              <button
+                value="7"
+                onclick="inputKey(7)"
+                class="btn-inner inputBtn"
+              >
+                7
+              </button>
+            </div>
+            <div class="col-3 btn-box">
+              <button
+                value="8"
+                onclick="inputKey(8)"
+                class="btn-inner inputBtn"
+              >
+                8
+              </button>
+            </div>
+            <div class="col-3 btn-box">
+              <button
+                value="9"
+                onclick="inputKey(9)"
+                class="btn-inner inputBtn"
+              >
+                9
+              </button>
+            </div>
+            <div class="col-3 btn-box">
+              <button
+                value="-"
+                onclick="inputKey2('-')"
+                class="btn-inner inputOp"
+              >
+                &minus;
+              </button>
+            </div>
+            <div class="col-3 btn-box">
+              <button
+                value="4"
+                onclick="inputKey(4)"
+                class="btn-inner inputBtn"
+              >
+                4
+              </button>
+            </div>
+            <div class="col-3 btn-box">
+              <button
+                value="5"
+                onclick="inputKey(5)"
+                class="btn-inner inputBtn"
+              >
+                5
+              </button>
+            </div>
+            <div class="col-3 btn-box">
+              <button
+                value="6"
+                onclick="inputKey(6)"
+                class="btn-inner inputBtn"
+              >
+                6
+              </button>
+            </div>
+            <div class="col-3 btn-box">
+              <button
+                value="+"
+                onclick="inputKey2('+')"
+                class="btn-inner inputOp"
+              >
+                &plus;
+              </button>
+            </div>
+          </div>
+          <div class="box-2 row m-0 g-0">
+            <div class="col-9 row m-0 p-0 g-0">
+              <div class="col-4 btn-box">
+                <button
+                  value="1"
+                  onclick="inputKey(1)"
+                  class="btn-inner inputBtn"
+                >
+                  1
+                </button>
+              </div>
+              <div class="col-4 btn-box">
+                <button
+                  value="2"
+                  onclick="inputKey(2)"
+                  class="btn-inner inputBtn"
+                >
+                  2
+                </button>
+              </div>
+              <div class="col-4 btn-box">
+                <button
+                  value="3"
+                  onclick="inputKey(3)"
+                  class="btn-inner inputBtn"
+                >
+                  3
+                </button>
+              </div>
+              <div class="col-8 btn-box">
+                <button
+                  value="0"
+                  onclick="inputKey(0)"
+                  class="btn-inner inputBtn"
+                >
+                  0
+                </button>
+              </div>
+              <div class="col-4 btn-box">
+                <button
+                  value="."
+                  onclick="inputKey('.')"
+                  class="btn-inner inputBtn"
+                >
+                  .
+                </button>
+              </div>
+            </div>
+            <div class="col-3 btn-box">
+              <button id="enterKey" class="btn-inner">&equals;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <p class="ps-2 fixed-bottom text-muted" style="font-size: 13px">
+      &copy abhishek
+    </p>
+
+    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
