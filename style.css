@@ -7,10 +7,10 @@
 }
 
 body {
-  background-image: linear-gradient(147deg, #f9fcff 0%, #dee4ea 74%);
+  background-color: #dee4eae7;
 }
 main {
-  height: 100vh;
+  margin-top: 4rem;
 }
 .cal-container {
   width: 330px;
